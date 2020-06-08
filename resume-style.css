@@ -1,0 +1,52 @@
+html { 
+  background: url(resume-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  display: grid;
+  grid-template-rows: auto, auto;
+  grid-template-areas: 
+  "top top"
+  "bottom bottom";
+}
+
+
+main{
+  text-align: center
+}
+
+h3{
+    background-color: rgb(197,211,238);
+  }
+
+.bottom{
+display:grid;
+grid-template-columns: 33%, 33%, 34%;
+grid-template-rows: 28%, 28%, 16%, 28%;
+grid-template-areas: 
+"block1 block2 block3"
+"block4 block5 block6"
+"block7 block7 block7"
+"block8 block9";
+}
+
+.profile{grid-area: block1;}
+.profile_picture{grid-area: block2;}
+.reach_me{grid-area: block3;}
+.education{grid-area: block4;}
+.box{grid-area: block5;}
+.expertise{grid-area: block6;}
+.experience{grid-area: block7;}
+.list{grid-area: block8;}
+.list_2{grid-area: block9;}
+
+
+#profile-pic {
+    width: 305px;
+    height: 365px;
+    border-radius: 50%;
+    margin: 15% auto;
+}
